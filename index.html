@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>azrielfatur.</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+    <body style="font-family: 'Mulish', sans-serif;">
+        <div class="max-w-7xl mx-auto px-6" x-data="setup()">
+            <!-- Navbar -->
+            <div class="flex justify-between items-center lg:py-12 py-8">
+                <a href="/" class="text-xl">azrielfatur.</a>
+                <button @click="isSidebarOpen = true"><img src="assets/images/menu.svg" width="24px"></button>
+            </div>
+
+            <!-- Social Media -->
+            <div class="flex md:visible invisible flex-col items-center fixed bottom-0 space-y-5">
+                <a href="https://instagram.com/azrielfatur"><img src="assets/images/instagram.svg" class="w-7"></a>
+                <a href="https://github.com/azrielfatur"><img src="assets/images/github.svg" class="w-7"></a>
+                <a href="https://dribbble.com/azrielfatur"><img src="assets/images/dribbble.svg" class="w-7"></a>
+                <img src="assets/images/youtube.svg" class="w-7">
+                <div class="h-32 bg-black w-0.5 rounded"></div>
+            </div>
+
+            <!-- Menubar  -->
+            <div x-transition:enter="transform transition-transform duration-300"
+                x-transition:enter-start="translate-x-full" x-transition:enter-end="-translate-x-0"
+                x-transition:leave="transform transition-transform duration-300"
+                x-transition:leave-start="-translate-x-0" x-transition:leave-end="translate-x-full"
+                class="bg-gray-900 fixed top-0 right-0 md:w-2/5 w-3/5 h-screen z-10" x-show="isSidebarOpen">
+                <div class="md:px-8 px-6 py-7">
+                    <button @click="isSidebarOpen = false"><img src="assets/images/close.svg" width="32px"></button>
+                    <div class="mt-10">
+                        <div class="text-md uppercase font-bold text-gray-700">Menu</div>
+                        <div class="md:space-y-5 space-y-2 mt-5">
+                            <div>
+                                <a href="#about"
+                                    class="md:text-2xl text-lg capitalize font-bold text-white transition hover:border-red-600 border-transparent border-b-4">About
+                                    Me</a>
+                            </div>
+                            <div>
+                                <a href="#projects"
+                                    class="md:text-2xl text-lg capitalize font-bold text-white transition hover:border-red-600 border-transparent border-b-4">Projects</a>
+                            </div>
+                            <div>
+                                <a href="#contact"
+                                    class="md:text-2xl text-lg capitalize font-bold text-white transition hover:border-red-600 border-transparent border-b-4">Contact</a>
+                            </div>
+                            <div>
+                                <a href="coming_soon.html"
+                                    class="md:text-2xl text-lg capitalize font-bold text-white transition hover:border-red-600 border-transparent border-b-4">Blogs</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <div class="text-md uppercase font-bold text-gray-700">Social</div>
+                        <div class="md:space-y-5 space-y-2 mt-5">
+                            <div>
+                                <a href="https://instagram.com/azrielfatur"
+                                    class="md:text-2xl text-lg capitalize font-bold text-white transition hover:border-red-600 border-transparent border-b-4">Instagram</a>
+                            </div>
+                            <div>
+                                <a href="https://github.com/azrielfatur"
+                                    class="md:text-2xl text-lg capitalize font-bold text-white transition hover:border-red-600 border-transparent border-b-4">Github</a>
+                            </div>
+                            <div>
+                                <a href="https://dribbble.com/azrielfatur"
+                                    class="md:text-2xl text-lg capitalize font-bold text-white transition hover:border-red-600 border-transparent border-b-4">Dribbble</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:mx-20 md:px-10">
+                <!-- Section 1 -->
+                <div class="h-96 my-20 py-10">
+                    <div class="lg:text-3xl md:text-2xl text-lg font-light">Hello, I'm Azriel Faturrachman</div>
+                    <div class="lg:text-7xl md:text-6xl text-5xl font-extrabold mb-12 lg:space-y-5">
+                        <div class="">Ui/Ux Designer &</div>
+                        <div class="">Fullstack Web Developer</div>
+                    </div>
+                    <a href="#" class="bg-red-600 w-full text-white rounded px-10 py-3">View project</a href="#">
+                </div>
+
+                <!-- Section 2 -->
+                <div class="my-20 py-20" id="about">
+                    <div class="text-4xl font-extrabold">A Little About Me</div>
+                    <div class="grid lg:grid-cols-2 items-center gap-20 mt-10">
+                        <div class="font-light text-md">
+                            <p>Hello, my fullname is Muhammad Azriel Faturrachman a person enjoy for creating new
+                                things. My
+                                passion in web development started when I was 12 years old when I started actively
+                                writing
+                                blogs and creating blogspot templates with HTML and CSS.</p>
+                            <br />
+                            <p>For now, I work as a fullstack web developer in a finance company in Indonesia. And I
+                                also
+                                have a half-hour startup that serves to meet the needs of the support system.</p>
+                        </div>
+                        <div class="justify-center">
+                            <div class="font-semibold lg:ml-10">Here are few technologies I use :</div>
+                            <div class="flex justify-around">
+                                <div>
+                                    <span class="flex my-5 gap-5"><img src="assets/images/red-arrow-right.svg"
+                                            width="16px">
+                                        Javascripts</span>
+                                    <span class="flex my-5 gap-5"><img src="assets/images/red-arrow-right.svg"
+                                            width="16px">
+                                        Node
+                                        JS</span>
+                                    <span class="flex my-5 gap-5"><img src="assets/images/red-arrow-right.svg"
+                                            width="16px">
+                                        Express
+                                        JS</span>
+                                    <span class="flex my-5 gap-5"><img src="assets/images/red-arrow-right.svg"
+                                            width="16px">
+                                        Vue
+                                        JS</span>
+                                </div>
+                                <div>
+                                    <span class="flex my-5 gap-5"><img src="assets/images/red-arrow-right.svg"
+                                            width="16px">
+                                        Tailwindcss</span>
+                                    <span class="flex my-5 gap-5"><img src="assets/images/red-arrow-right.svg"
+                                            width="16px">
+                                        Wordpress</span>
+                                    <span class="flex my-5 gap-5"><img src="assets/images/red-arrow-right.svg"
+                                            width="16px">
+                                        PHP</span>
+                                    <span class="flex my-5 gap-5"><img src="assets/images/red-arrow-right.svg"
+                                            width="16px">
+                                        Laravel</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div class=" py-20 lg:grid lg:grid-cols-2 grid-flow-col gap-20" id="projects">
+                    <div class="col-start-1">
+                        <!-- Tag Card -->
+                        <div class="mb-20">
+                            <div class="text-4xl font-extrabold">Some of projects <br /> I've Made</div>
+                            <p class="mt-3 mb-10 font-light">Here are some of the projects from all <br /> the projects
+                                that I've
+                                made</p>
+
+                            <a href="" class="flex items-center text-lg text-red-700 font-semibold gap-10">Explore More
+                                <img src="assets/images/red-arrow-right.svg">
+                            </a>
+                        </div>
+                        <!-- Card -->
+                        <div style="max-width: 100%;">
+                            <div class="relative rounded-lg" style="background-image: url(assets/images/projects/temanpindah/screenshot.png);background-size:cover;background-position: top center;
+                                width: 100%; height: 250px;">
+                                <div class="absolute top-0 right-0 left-0 bottom-0 bg-gray-900 opacity-10 rounded-lg">
+                                </div>
+                            </div>
+                            <div class="mx-3">
+                                <div class="text-sm text-red-400 font-semibold uppercase py-3">Tailwindcss, Wordpress
+                                </div>
+                                <div class="text-3xl font-extrabold">TemanPindah Company Profile</div>
+
+                                <div class="flex justify-between items-center mt-10 pb-20">
+                                    <a href="projects/temanpindah" class="flex gap-10 text-sm">View project <img
+                                            src="assets/images/arrow-right.svg" class="w-5"></a>
+
+                                    <div class="flex gap-5">
+                                        <a href="https://temanpindah.com" target="_blank"><img
+                                                src="assets/images/external-link.svg" class="w-5"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-start-2">
+                        <div style="max-width: 100%;">
+                            <div class="relative rounded-lg"
+                                style="background-image: url(assets/images/projects/find-jobs/screenshot.png);background-size:cover;width: 100%; height: 250px;">
+                                <div class="absolute top-0 right-0 left-0 bottom-0 bg-gray-900 opacity-10 rounded-lg">
+                                </div>
+                            </div>
+                            <div class="mx-3">
+                                <div class="text-sm text-red-400 font-semibold uppercase py-3">Figma
+                                </div>
+                                <div class="text-3xl font-extrabold">Find Jobs Design Mobile App</div>
+
+                                <div class="flex justify-between items-center mt-10 pb-20">
+                                    <a href="projects/find-jobs" class="flex gap-10 text-sm">View project <img
+                                            src="assets/images/arrow-right.svg" class="w-5"></a>
+
+                                    <div class="flex gap-5">
+                                        <a href="https://dribbble.com/shots/15608570-Find-Jobs-Mobile-UI-App"><img
+                                                src="assets/images/dribbble.svg" class="w-5"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="max-width: 100%;">
+                            <div class="relative object-cover rounded-lg"
+                                style="background-image: url(assets/images/coffesruput.png);background-size:cover;width: 100%; height: 250px;">
+                                <div class="absolute top-0 right-0 left-0 bottom-0 bg-gray-900 opacity-10 rounded-lg">
+                                </div>
+                            </div>
+                            <div class="mx-3">
+                                <div class="text-sm text-red-400 font-semibold uppercase py-3">Tailwindcss, Wordpress
+                                </div>
+                                <div class="text-3xl font-extrabold">CoffeSruputs Landing Page</div>
+
+                                <div class="flex justify-between items-center mt-10 pb-20">
+                                    <a href="#" class="flex gap-10 text-sm">View project <img
+                                            src="assets/images/arrow-right.svg" class="w-5"></a>
+
+                                    <div class="flex gap-5">
+                                        <a href=""><img src="assets/images/github.svg" class="w-5"></a>
+                                        <a href=""><img src="assets/images/external-link.svg" class="w-5"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 4 -->
+                <div class="my-20 py-20" id="contact">
+                    <div>
+                        <div class="text-4xl font-extrabold">Get In Touch</div>
+                        <p class="my-10 font-light">If you have any project or want to say hello, send to me</p>
+                    </div>
+                    <div class="grid lg:grid-cols-2 gap-20">
+
+                        <div>
+                            <div class="flex gap-3 mb-3">
+                                <input type="text" class="w-full bg-gray-200 rounded-sm py-4 px-4 outline-none"
+                                    placeholder="Name">
+                                <input type="email" class="w-full bg-gray-200 rounded-sm py-4 px-4 outline-none"
+                                    placeholder="Email">
+                            </div>
+                            <div class="space-y-3 mb-5">
+                                <input type="text" class="w-full bg-gray-200 rounded-sm py-4 px-4 outline-none"
+                                    placeholder="Subject">
+                                <textarea type="text" class="w-full bg-gray-200 rounded-sm py-4 px-4 outline-none"
+                                    placeholder="Message"></textarea>
+                            </div>
+
+                            <a href="#" class="bg-red-600 text-white px-10 py-3 rounded-sm">Send Message</a>
+
+                        </div>
+                        <div class="flex justify-center">
+                            <div>
+                                <div class="text-xl mb-10">Contact Information</div>
+                                <div class="space-y-5">
+                                    <div class="flex font-light gap-10"><img src="assets/images/phone.svg" width="20px">
+                                        +6287883730944
+                                    </div>
+                                    <div class="flex font-light gap-10"><img src="assets/images/mail.svg" width="20px">
+                                        azriel.fatur1@gmail.com</div>
+                                    <div class="flex font-light gap-10"><img src="assets/images/send.svg" width="20px">
+                                        @azrielmuhammad</div>
+                                    <div class="flex font-light gap-10"><img src="assets/images/location.svg"
+                                            width="20px">
+                                        Bekasi, Jawa Barat, Indonesia 17158</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div>
+                    <hr>
+                    <p class="text-center py-10 font-light text-gray-400">© 2021 azrielfatur. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </body>
+<script>
+    const setup = () => {
+        return {
+            isSidebarOpen: false,
+        }
+    }
+</script>
+<script defer src="https://unpkg.com/alpinejs@3.4.1/dist/cdn.min.js"></script>
+
+</html>
