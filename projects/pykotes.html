@@ -16,7 +16,7 @@
         <!-- Navbar -->
         <div class="flex justify-between items-center lg:py-12 py-8">
             <a href="/" class="text-xl">azrielfatur.</a>
-            <button @click="isSidebarOpen = true"><img src="../assets/images/menu.svg" class="w-6"></button>
+            <button @click="isSidebarOpen = true"><img src="../assets/images/menu.svg" width="24px"></button>
         </div>
 
         <!-- Menubar  -->
@@ -26,7 +26,7 @@
             x-transition:leave-end="translate-x-full" class="bg-gray-900 fixed top-0 right-0 md:w-2/5 w-3/5 h-screen z-10"
             x-show="isSidebarOpen">
             <div class="md:px-8 px-6 py-7">
-                <button @click="isSidebarOpen = false"><img src="../assets/images/close.svg" class="w-8"></button>
+                <button @click="isSidebarOpen = false"><img src="../assets/images/close.svg" width="32px"></button>
                 <div class="mt-10">
                     <div class="text-md uppercase font-bold text-gray-700">Menu</div>
                     <div class="md:space-y-5 space-y-2 mt-5">
@@ -63,17 +63,17 @@
 
         <!-- Section 1 -->
         <div class="md:mx-20 md:px-10">
-            <div class="mt-16 md:pt-10">
-                <div class="md:text-md text-sm font-light"><span class="text-red-600">Home</span> / <span class="text-red-600">Case Study</span> / Ui/Ux Find Jobs Design Mobile Apps</div>
+            <div class="pt-10">
+                <div class="md:text-md text-sm font-light"><span class="text-red-600">Home</span> / <span class="text-red-600">Projects</span> / Psychological Test Online</div>
                 <div class="md:text-6xl text-4xl font-extrabold mt-5 mb-12 lg:space-y-5">
-                    <div class="">Ui/Ux Find Jobs Design Mobile Apps</div>
+                    <div class="">Psychological Test Online</div>
                 </div>
             </div>
 
-                <img src="../assets/images/projects/find-jobs/screenshot.png" class="w-full object-cover" style="min-height: 300px;">
+                <img src="../assets/images/projects/pykotes/screenshot.webp" class="w-full object-cover rounded mb-10">
                 
-                <div class="md:mx-20 md:text-lg text-gray-700 font-light space-y-5">
-                    <p class="leading-10"></p>
+                <div class="md:mx-20 md:text-lg text-gray-700 font-light">
+                    <p class="leading-8 my-4">Pykotes adalah sebuah aplikasi berbasis website untuk melihat hasil dari kepribadian seseorang melalui berbagai macam tes. Diantaranya terdapat tes mainstream seperti MBTI dan DISC. Tapi saat anda membaca tulisan ini, pykotes baru tersedia tes MBTI saja.</p>
                 </div>
 
             <!-- Footer -->
@@ -82,7 +82,6 @@
                 <p class="text-center py-10 font-light text-gray-400">© 2021 azrielfatur. All Rights Reserved</p>
             </div>
         </div>
-    </div>
     </div>
 </body>
 <script>
